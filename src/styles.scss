@@ -1,1 +1,214 @@
 /* You can add global styles to this file, and also import other style files */
+/* SCSS HEX */
+$seashell: #fcf4eeff;
+$cadet-gray: #90acb6ff;
+$cadet-gray-2: #7b97a1ff;
+$platinum: #e0e1e0ff;
+$timberwolf: #d6d1cdff;
+$air-force-blue: #557f8eff;
+
+/* SCSS HSL */
+$seashell: hsla(26, 70%, 96%, 1);
+$cadet-gray: hsla(196, 21%, 64%, 1);
+$cadet-gray-2: hsla(196, 17%, 56%, 1);
+$platinum: hsla(120, 2%, 88%, 1);
+$timberwolf: hsla(27, 10%, 82%, 1);
+$air-force-blue: hsla(196, 25%, 45%, 1);
+
+/* SCSS RGB */
+$seashell: rgba(252, 244, 238, 1);
+$cadet-gray: rgba(144, 172, 182, 1);
+$cadet-gray-2: rgba(123, 151, 161, 1);
+$platinum: rgba(224, 225, 224, 1);
+$timberwolf: rgba(214, 209, 205, 1);
+$air-force-blue: rgba(85, 127, 142, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(
+  0deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-right: linear-gradient(
+  90deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-bottom: linear-gradient(
+  180deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-left: linear-gradient(
+  270deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-top-right: linear-gradient(
+  45deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-bottom-right: linear-gradient(
+  135deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-top-left: linear-gradient(
+  225deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-bottom-left: linear-gradient(
+  315deg,
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+$gradient-radial: radial-gradient(
+  #fcf4eeff,
+  #90acb6ff,
+  #7b97a1ff,
+  #e0e1e0ff,
+  #d6d1cdff,
+  #557f8eff
+);
+
+/* General body styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the main container */
+main {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Unordered list styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* List item styles */
+ul li {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: #0275d8;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #0256d3;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  main {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+.hero-image {
+  /* Use the provided image as the background */
+  background-image: url("/src/assets/images/hero.png");
+  /* Set the height of the hero image to a suitable size */
+  height: 500px;
+  /* Create a fallback color in case the image doesn't load */
+  background-color: #cccccc;
+  /* Set background position and repeat properties */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Use background-size cover to cover the entire width of the container */
+  background-size: cover;
+  /* Position the hero image and text within it */
+  position: relative;
+}
+
+.hero-text {
+  /* Position the text in the center of the image */
+  text-align: center;
+  /* Position the text block */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Transform to center align the text block */
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+  /* Style your hero text */
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-text button {
+  /* Style your button */
+  font-size: 20px;
+  padding: 10px 20px;
+  background: #f8f8f8;
+  color: black;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-text button:hover {
+  background: #ddd;
+}
